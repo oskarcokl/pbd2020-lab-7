@@ -32,7 +32,7 @@ public class TrainClassifierService extends IntentService {
         {
             float accMean = intent.getFloatExtra("accMean", 0);
             float accVar = intent.getFloatExtra("accVar", 0);
-            float accMCR = intent.getFloatExtra("accVar", 0);
+            float accMCR = intent.getFloatExtra("accMCR", 0);
             String label = intent.getStringExtra("label");
             trainClassifier(accMean, accVar, accMCR, label);
         }
